@@ -4733,7 +4733,6 @@ def choutenplus():
                 else:
                     tB_p22=textBox_p22.get()
 
-                #ここでなぜかエラー　strとintの間に不等号が入っちゃってるらしい　左が違うのか？？？  NaNがあるっぽい！！どこかでdropnaする必要あり　他の関数で起きていないのはなぜ？？
                 print(data_concat_z_p)
                 data_concat_z_p_drop = data_concat_z_p.dropna(how="any")
                 print(type(data_concat_z_p["X"][0]))
